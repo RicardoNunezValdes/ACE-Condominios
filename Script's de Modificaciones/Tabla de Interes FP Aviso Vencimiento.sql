@@ -1,0 +1,17 @@
+INSERT INTO Cfg_TablaInteres (Nombre) VALUES ('CHUBB Condominios')
+
+-- Nota : Reemplazar TablaInteresID por el Id generado en BD Pruebas
+INSERT INTO Cfg_TablaInteresCuota(TablaInteresID,CuotaID,Tasa) VALUES ('F37D04BD-0CA8-4D28-96FA-514D722CC299',1,1.00)
+INSERT INTO Cfg_TablaInteresCuota(TablaInteresID,CuotaID,Tasa) VALUES ('F37D04BD-0CA8-4D28-96FA-514D722CC299',2,0.5)
+INSERT INTO Cfg_TablaInteresCuota(TablaInteresID,CuotaID,Tasa) VALUES ('F37D04BD-0CA8-4D28-96FA-514D722CC299',3,0.33)
+INSERT INTO Cfg_TablaInteresCuota(TablaInteresID,CuotaID,Tasa) VALUES ('F37D04BD-0CA8-4D28-96FA-514D722CC299',4,0.25)
+INSERT INTO Cfg_TablaInteresCuota(TablaInteresID,CuotaID,Tasa) VALUES ('F37D04BD-0CA8-4D28-96FA-514D722CC299',5,0.2)
+INSERT INTO Cfg_TablaInteresCuota(TablaInteresID,CuotaID,Tasa) VALUES ('F37D04BD-0CA8-4D28-96FA-514D722CC299',6,0.16)
+INSERT INTO Cfg_TablaInteresCuota(TablaInteresID,CuotaID,Tasa) VALUES ('F37D04BD-0CA8-4D28-96FA-514D722CC299',7,0.148966229)
+INSERT INTO Cfg_TablaInteresCuota(TablaInteresID,CuotaID,Tasa) VALUES ('F37D04BD-0CA8-4D28-96FA-514D722CC299',8,0.131127523)
+INSERT INTO Cfg_TablaInteresCuota(TablaInteresID,CuotaID,Tasa) VALUES ('F37D04BD-0CA8-4D28-96FA-514D722CC299',9,0.117257145)
+INSERT INTO Cfg_TablaInteresCuota(TablaInteresID,CuotaID,Tasa) VALUES ('F37D04BD-0CA8-4D28-96FA-514D722CC299',10,0.106164619)
+
+-- Nota : Reemplazar TablaInteresID por el Id generado en BD Pruebas
+UPDATE Cfg_ProductoCompaniaFormaPago SET MaximoCuotas = 8, TablaInteresID = 'F37D04BD-0CA8-4D28-96FA-514D722CC299'
+WHERE ProductoID = '00000000-0000-0000-0000-000000000969' and FomaPagoID = 160 -- Aviso Vencimiento
